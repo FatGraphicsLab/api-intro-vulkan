@@ -1,6 +1,7 @@
 #include "Framework/VkApp.h"
 
 VkApp* GApp = nullptr;
+VkInstance GVkInstance = nullptr;
 
 VkApp::VkApp()
 {
@@ -31,12 +32,12 @@ void VkApp::InitVulkan()
 	instanceCreateInfo.pApplicationInfo = &appInfo;
 
 	VKCHK(vkCreateInstance(&instanceCreateInfo, nullptr, &vkInstance_));
+	GVkInstance = vkInstance_;
 
 	// First figure out how many devices are in the system
 	uint32_t physicalDeviceCount = 0;
 	VKCHK(vkEnumeratePhysicalDevices(vkInstance_, &physicalDeviceCount, nullptr));
 
-	printf("physicalDeviceCount = %u\n", physicalDeviceCount);
 	vkPhysicalDevices_.resize(physicalDeviceCount);
 	vkEnumeratePhysicalDevices(vkInstance_, &physicalDeviceCount, &vkPhysicalDevices_[0]);
 }

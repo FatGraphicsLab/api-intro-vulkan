@@ -13,9 +13,10 @@ public:
 	
 	virtual int Run();
 
-private:
+protected:
 	VkInstance vkInstance_;
 	std::vector<VkPhysicalDevice> vkPhysicalDevices_;
 };
 
 extern VkApp* GApp;
+extern VkInstance GVkInstance;
