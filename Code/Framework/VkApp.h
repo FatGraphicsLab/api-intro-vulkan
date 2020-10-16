@@ -15,6 +15,7 @@ public:
 
 protected:
 	VkInstance vkInstance_;
+	VkDevice vkLogicalDevice_;
 	std::vector<VkPhysicalDevice> vkPhysicalDevices_;
 };
 
