@@ -39,6 +39,7 @@
 
  * [RenderDoc - Vulkan in 30 Minutes][10]
  * [RenderDoc - Brief Guide to Vulkan Layers][11]
+ * [Intel - API without Secrets: Introduction to Vulkan][12]
  * [Vulkan Tutorial][7]
 
 
@@ -64,3 +65,4 @@
 [9]:https://www.khronos.org/registry/vulkan/specs/1.0/html/
 [10]:https://renderdoc.org/vulkan-in-30-minutes.html
 [11]:https://renderdoc.org/vulkan-layer-guide.html
+[12]:https://github.com/GameTechDev/IntroductionToVulkan
