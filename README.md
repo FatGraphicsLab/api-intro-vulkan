@@ -14,7 +14,8 @@
 ## Platforms
 
  * Win7, Win10
- * VS2017
+ * Linux
+ * Android
 
 
 ## Solution Layout
@@ -25,7 +26,7 @@
 [BinTemp]         intermediate build files
 [Asset]           asset data
 [Code]
-  [External]
+  [External]      3rdparty libraries
   [Framework]     mini framework makes vulkan runs~
   [Samples]       a lot of samples
   [Solutions]
