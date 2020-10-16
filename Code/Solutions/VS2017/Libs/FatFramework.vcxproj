@@ -18,6 +18,15 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Framework\VkAllocator.h" />
+    <ClInclude Include="..\..\..\Framework\VkApp.h" />
+    <ClInclude Include="..\..\..\Framework\VkHeaders.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Framework\VkApp.cpp" />
+    <ClCompile Include="..\..\..\Framework\VkErrorCode.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{7FE6C04A-5AFD-44A0-9234-0310FCEA575F}</ProjectGuid>

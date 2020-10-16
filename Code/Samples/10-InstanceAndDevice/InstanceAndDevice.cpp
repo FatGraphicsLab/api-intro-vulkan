@@ -1,3 +1,19 @@
+// Application --1:*-- VkInstance -1:*- VkPhysicalDevice -1:*- VkLogicalDevice -1:*- 
+
+#include "Framework/VkApp.h"
+
+class InstanceAndDeviceApp : public VkApp
+{
+};
+
+int main()
+{
+	InstanceAndDeviceApp app;
+	GApp = &app;
+	return GApp->Run();
+}
+
+#if 0
 #include <vulkan/vulkan.h>
 #include <stdio.h>
 #include <vector>
@@ -37,3 +53,4 @@ int main()
 
 	return 0;
 }
+#endif
