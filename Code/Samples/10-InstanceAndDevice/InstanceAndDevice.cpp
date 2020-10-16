@@ -13,15 +13,11 @@ protected:
 	const char* GetMemoryHeapDesc(VkMemoryHeapFlags flags);
 	
 	void PrintPhysicalDeviceProperties();
-	void PrintInstanceLayerProperties();
-	void PrintInstanceExtenionProperties();
 };
 
 int InstanceAndDeviceApp::Run()
 {
 	PrintPhysicalDeviceProperties();
-	PrintInstanceLayerProperties();
-	PrintInstanceExtenionProperties();
 	return 0;
 }
 
@@ -113,103 +109,9 @@ void InstanceAndDeviceApp::PrintPhysicalDeviceProperties()
 	}
 }
 
-void InstanceAndDeviceApp::PrintInstanceLayerProperties()
-{
-	VKCHK_DECL;
-	uint32_t numInstanceLayers = 0;
-	std::vector<VkLayerProperties> instanceLayerProperties;
-
-	// Query the instance layers
-	VKCHK(vkEnumerateInstanceLayerProperties(&numInstanceLayers, nullptr));
-
-	// If there are any layers, query their properties
-	if (numInstanceLayers != 0)
-	{
-		instanceLayerProperties.resize(numInstanceLayers);
-		VKCHK(vkEnumerateInstanceLayerProperties(&numInstanceLayers, instanceLayerProperties.data()));
-
-		for (uint32_t i = 0; i < numInstanceLayers; ++i)
-		{
-			printf("Instance Layer #%u\n", i);
-			printf("  layerName: %s\n", instanceLayerProperties[i].layerName);
-			printf("  specVersion: %u\n", instanceLayerProperties[i].specVersion);
-			printf("  implementationVersion: %u\n", instanceLayerProperties[i].implementationVersion);
-			printf("  description: %s\n", instanceLayerProperties[i].description);
-			printf("\n");
-		}
-	}
-}
-
-void InstanceAndDeviceApp::PrintInstanceExtenionProperties()
-{
-	VKCHK_DECL;
-	uint32_t numInstanceExtensions = 0;
-	std::vector<VkExtensionProperties> instanceExtensionProperties;
-
-	// Query the instance extensions
-	VKCHK(vkEnumerateInstanceExtensionProperties(nullptr, &numInstanceExtensions, nullptr));
-
-	// If there are any extensions, query their properties
-	if (numInstanceExtensions != 0)
-	{
-		instanceExtensionProperties.resize(numInstanceExtensions);
-		VKCHK(vkEnumerateInstanceExtensionProperties(nullptr,
-			&numInstanceExtensions, instanceExtensionProperties.data()));
-
-		printf("Instance Extensions");
-		for (uint32_t i = 0; i < numInstanceExtensions; ++i)
-		{
-			printf("  Name: %s, specVersion: %u\n", instanceExtensionProperties[i].extensionName,
-				instanceExtensionProperties[i].specVersion);
-		}
-	}
-}
-
 int main()
 {
 	InstanceAndDeviceApp app;
 	GApp = &app;
 	return GApp->Run();
 }
-
-#if 0
-#include <vulkan/vulkan.h>
-#include <stdio.h>
-#include <vector>
-
-int main()
-{
-	VkInstance instance = nullptr;
-	std::vector<VkPhysicalDevice> physicalDevices;
-
-	VkResult result = VK_SUCCESS;
-	VkApplicationInfo appInfo = {};
-	VkInstanceCreateInfo instanceCreateInfo = {};
-
-	// A generic application info structure
-	appInfo.sType = VK_STRUCTURE_TYPE_APPLICATION_INFO;
-	appInfo.pApplicationName = "Application";
-	appInfo.applicationVersion = 1;
-	appInfo.apiVersion = VK_MAKE_VERSION(1, 0, 0);
-
-	// Create the instance
-	instanceCreateInfo.sType = VK_STRUCTURE_TYPE_INSTANCE_CREATE_INFO;
-	instanceCreateInfo.pApplicationInfo = &appInfo;
-
-	result = vkCreateInstance(&instanceCreateInfo, nullptr, &instance);
-	if (result == VK_SUCCESS)
-	{
-		// First figure out how many devices are in the system
-		uint32_t physicalDeviceCount = 0;
-		vkEnumeratePhysicalDevices(instance, &physicalDeviceCount, nullptr);
-		if (result == VK_SUCCESS)
-		{
-			printf("physicalDeviceCount = %u\n", physicalDeviceCount);
-			physicalDevices.resize(physicalDeviceCount);
-			vkEnumeratePhysicalDevices(instance, &physicalDeviceCount, &physicalDevices[0]);
-		}
-	}
-
-	return 0;
-}
-#endif
