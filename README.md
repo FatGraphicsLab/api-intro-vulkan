@@ -35,14 +35,22 @@
 ```
 
 
+## Tutorial
+
+ * [RenderDoc - Vulkan in 30 Minutes][10]
+ * [Vulkan Tutorial][7]
+
+
 ## Resources
 
+ * [KHRONOS - Vulkan Homepage][8]
+ * [KHRONOS - Vulkan 1.0 Spec][9]
  * [LunarG - Vulkan SDK][6]
  * [NVIDIA - Vulkan Developer][2]
  * [NVIDIA - DesignWorks Samples][5]
  * [AMD - Vulkan Developer][3]
  * [AMD - Vulkan Memory Allocator(VMA)][4]
- * [Vulkan Tutorial][7]
+
 
 [1]:https://www.khronos.org/vulkan/
 [2]:https://developer.nvidia.com/Vulkan
@@ -51,3 +59,6 @@
 [5]:https://github.com/nvpro-samples
 [6]:https://www.lunarg.com/vulkan-sdk/
 [7]:https://vulkan-tutorial.com/
+[8]:https://www.khronos.org/vulkan/
+[9]:https://www.khronos.org/registry/vulkan/specs/1.0/html/
+[10]:https://renderdoc.org/vulkan-in-30-minutes.html
