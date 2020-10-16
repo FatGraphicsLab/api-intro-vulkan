@@ -23,7 +23,7 @@ VkApp::~VkApp()
 
 void VkApp::InitVulkan()
 {
-	VkResult result;
+	VKCHK_DECL;
 	VkApplicationInfo appInfo = {};
 	VkInstanceCreateInfo instanceCreateInfo = {};
 
@@ -84,7 +84,7 @@ void VkApp::InitVulkan()
 
 void VkApp::ShutdownVulkan()
 {
-	VkResult result;
+	VKCHK_DECL;
 	VKCHK(vkDeviceWaitIdle(vkLogicalDevice_));
 	vkDestroyDevice(vkLogicalDevice_, nullptr);
 	vkDestroyInstance(vkInstance_, nullptr);

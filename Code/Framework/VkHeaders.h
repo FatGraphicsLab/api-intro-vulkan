@@ -50,6 +50,7 @@ const char* GetErrorString(VkResult result);
 // https://www.khronos.org/registry/vulkan/specs/1.2-extensions/man/html/VkResult.html
 #if FAT_DEBUG_BUILD
 #  ifndef VKCHK
+#  define VKCHK_DECL VkResult result
 #  define VKCHK(x) \
    { \
      result = (x); \
@@ -62,6 +63,7 @@ const char* GetErrorString(VkResult result);
 #  endif
 #else
 #  ifndef VKCHK
-#  define VKCHK(x) { (void)result; x; }
+#  define VKCHK_DECL
+#  define VKCHK(x) x
 #  endif
 #endif

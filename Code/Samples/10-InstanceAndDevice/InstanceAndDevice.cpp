@@ -8,15 +8,20 @@ public:
 	virtual int Run() override;
 
 protected:
-	void PrintPhysicalDeviceProperties();
 	const char* GetPhysicalDeviceTypeName(VkPhysicalDeviceType type);
 	const char* GetMemoryPropertyDesc(VkMemoryPropertyFlags flags);
 	const char* GetMemoryHeapDesc(VkMemoryHeapFlags flags);
+	
+	void PrintPhysicalDeviceProperties();
+	void PrintInstanceLayerProperties();
+	void PrintInstanceExtenionProperties();
 };
 
 int InstanceAndDeviceApp::Run()
 {
 	PrintPhysicalDeviceProperties();
+	PrintInstanceLayerProperties();
+	PrintInstanceExtenionProperties();
 	return 0;
 }
 
@@ -105,6 +110,58 @@ void InstanceAndDeviceApp::PrintPhysicalDeviceProperties()
 		}
 
 		printf("\n");
+	}
+}
+
+void InstanceAndDeviceApp::PrintInstanceLayerProperties()
+{
+	VKCHK_DECL;
+	uint32_t numInstanceLayers = 0;
+	std::vector<VkLayerProperties> instanceLayerProperties;
+
+	// Query the instance layers
+	VKCHK(vkEnumerateInstanceLayerProperties(&numInstanceLayers, nullptr));
+
+	// If there are any layers, query their properties
+	if (numInstanceLayers != 0)
+	{
+		instanceLayerProperties.resize(numInstanceLayers);
+		VKCHK(vkEnumerateInstanceLayerProperties(&numInstanceLayers, instanceLayerProperties.data()));
+
+		for (uint32_t i = 0; i < numInstanceLayers; ++i)
+		{
+			printf("Instance Layer #%u\n", i);
+			printf("  layerName: %s\n", instanceLayerProperties[i].layerName);
+			printf("  specVersion: %u\n", instanceLayerProperties[i].specVersion);
+			printf("  implementationVersion: %u\n", instanceLayerProperties[i].implementationVersion);
+			printf("  description: %s\n", instanceLayerProperties[i].description);
+			printf("\n");
+		}
+	}
+}
+
+void InstanceAndDeviceApp::PrintInstanceExtenionProperties()
+{
+	VKCHK_DECL;
+	uint32_t numInstanceExtensions = 0;
+	std::vector<VkExtensionProperties> instanceExtensionProperties;
+
+	// Query the instance extensions
+	VKCHK(vkEnumerateInstanceExtensionProperties(nullptr, &numInstanceExtensions, nullptr));
+
+	// If there are any extensions, query their properties
+	if (numInstanceExtensions != 0)
+	{
+		instanceExtensionProperties.resize(numInstanceExtensions);
+		VKCHK(vkEnumerateInstanceExtensionProperties(nullptr,
+			&numInstanceExtensions, instanceExtensionProperties.data()));
+
+		printf("Instance Extensions");
+		for (uint32_t i = 0; i < numInstanceExtensions; ++i)
+		{
+			printf("  Name: %s, specVersion: %u\n", instanceExtensionProperties[i].extensionName,
+				instanceExtensionProperties[i].specVersion);
+		}
 	}
 }
 
