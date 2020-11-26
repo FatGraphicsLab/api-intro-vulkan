@@ -2,20 +2,20 @@
 
 ![](Asset/vulkan-logo.png)
 
- * An sandbox of [Vulkan API][1]
+* An sandbox of [Vulkan API][1]
 
 
 ## Build
 
- * open Code/Solutions/VS2017/ApiIntroVulkan.sln
- * build & play~
+* open Code/Solutions/VS2017/ApiIntroVulkan.sln
+* build & play~
 
 
 ## Platforms
 
- * Win7, Win10
- * Linux
- * Android
+* Win7, Win10
+* Linux
+* Android
 
 
 ## Solution Layout
@@ -37,20 +37,29 @@
 
 ## Tutorial
 
- * [RenderDoc - Vulkan in 30 Minutes][10]
- * [RenderDoc - Brief Guide to Vulkan Layers][11]
- * [Vulkan Tutorial][7]
+* [RenderDoc - Vulkan in 30 Minutes][10]
+* [RenderDoc - Brief Guide to Vulkan Layers][11]
+* [Vulkan Tutorial][7]
 
 
 ## Resources
 
- * [KHRONOS - Vulkan Homepage][8]
- * [KHRONOS - Vulkan 1.0 Spec][9]
- * [LunarG - Vulkan SDK][6]
- * [NVIDIA - Vulkan Developer][2]
- * [NVIDIA - DesignWorks Samples][5]
- * [AMD - Vulkan Developer][3]
- * [AMD - Vulkan Memory Allocator(VMA)][4]
+* [KHRONOS - Vulkan Homepage][8]
+* [KHRONOS - Vulkan 1.0 Spec][9]
+* [LunarG - Vulkan SDK][6]
+* [NVIDIA - Vulkan Developer][2]
+* [NVIDIA - DesignWorks Samples][5]
+* [AMD - Vulkan Developer][3]
+* [AMD - Vulkan Memory Allocator(VMA)][4]
+* [AMD - GPUOpen Libraries & SDKs][13]
+
+
+## Github
+
+* [CIS 565 GPU Programming and Architecture][12]
+* [CIS 565 Homework1 - Forward+ renderer in Vulkan using Compute Shader][14]
+* [CIS 565 Homework2 - Forward+ rendering using Vulkan][15]
+
 
 
 [1]:https://www.khronos.org/vulkan/
@@ -64,3 +73,7 @@
 [9]:https://www.khronos.org/registry/vulkan/specs/1.0/html/
 [10]:https://renderdoc.org/vulkan-in-30-minutes.html
 [11]:https://renderdoc.org/vulkan-layer-guide.html
+[12]:https://cis565-fall-2020.github.io/
+[13]:https://github.com/GPUOpen-LibrariesAndSDKs
+[14]:https://github.com/WindyDarian/Vulkan-Forward-Plus-Renderer
+[15]:https://github.com/zimengyang/ForwardPlus_Vulkan

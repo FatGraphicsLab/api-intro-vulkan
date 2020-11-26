@@ -76,7 +76,7 @@ void InstanceAndDeviceApp::PrintPhysicalDeviceProperties()
 {
 	for (size_t i = 0; i < vkPhysicalDevices_.size(); ++i)
 	{
-		printf("Phsical Device #%zu\n", i);
+		printf("Physical Device #%zu\n", i);
 
 		VkPhysicalDeviceProperties deviceProperty;
 		vkGetPhysicalDeviceProperties(vkPhysicalDevices_[i], &deviceProperty);
