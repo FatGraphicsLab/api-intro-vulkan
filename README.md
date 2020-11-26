@@ -39,6 +39,7 @@
 
 * [RenderDoc - Vulkan in 30 Minutes][10]
 * [RenderDoc - Brief Guide to Vulkan Layers][11]
+* [Intel - API without Secrets: Introduction to Vulkan][12]
 * [Vulkan Tutorial][7]
 
 
@@ -77,3 +78,4 @@
 [13]:https://github.com/GPUOpen-LibrariesAndSDKs
 [14]:https://github.com/WindyDarian/Vulkan-Forward-Plus-Renderer
 [15]:https://github.com/zimengyang/ForwardPlus_Vulkan
+[16]:https://github.com/GameTechDev/IntroductionToVulkan
