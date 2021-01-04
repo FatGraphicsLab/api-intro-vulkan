@@ -53,6 +53,8 @@
 * [AMD - Vulkan Developer][3]
 * [AMD - Vulkan Memory Allocator(VMA)][4]
 * [AMD - GPUOpen Libraries & SDKs][13]
+* [GDC2018 - Getting Explicit: How Hard is Vulkan Really? (Porting DOOM3 to Vulkan)][17]
+* [GDC2019 - NVIDIA Nsight Graphics: Getting The Most From Your Vulkan Applications][19]
 
 
 ## Github
@@ -60,6 +62,7 @@
 * [CIS 565 GPU Programming and Architecture][12]
 * [CIS 565 Homework1 - Forward+ renderer in Vulkan using Compute Shader][14]
 * [CIS 565 Homework2 - Forward+ rendering using Vulkan][15]
+* [vkDOOM3][18]
 
 
 
@@ -79,3 +82,6 @@
 [14]:https://github.com/WindyDarian/Vulkan-Forward-Plus-Renderer
 [15]:https://github.com/zimengyang/ForwardPlus_Vulkan
 [16]:https://github.com/GameTechDev/IntroductionToVulkan
+[17]:https://www.gdcvault.com/play/1024848/Getting-Explicit-How-Hard-is
+[18]:https://github.com/DustinHLand/vkDOOM3
+[19]:https://www.nvidia.com/en-us/on-demand/session/gtcsiliconvalley2019-s9661/
