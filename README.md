@@ -58,9 +58,15 @@
 
 ## Github
 
+CIS 565
+
 * [CIS 565 GPU Programming and Architecture][12]
 * [CIS 565 Homework1 - Forward+ renderer in Vulkan using Compute Shader][14]
 * [CIS 565 Homework2 - Forward+ rendering using Vulkan][15]
+
+Niagara
+
+* [Niagara - a Vulkan renderer that is written on stream from scratch][29]
 
 
 ## vkDOOM3
@@ -108,3 +114,4 @@
 [26]:https://www.fasterthan.life/blog/2017/7/22/i-am-graphics-and-so-can-you-part-5-your-pixels-are-served
 [27]:https://www.fasterthan.life/blog/2017/7/24/i-am-graphics-and-so-can-you-part-6-pipelines
 [28]:https://www.fasterthan.life/blog/2017/7/28/i-am-graphics-and-so-can-you-part-7-the-renderer-of-worlds
+[29]:https://github.com/zeux/niagara
