@@ -53,7 +53,6 @@
 * [AMD - Vulkan Developer][3]
 * [AMD - Vulkan Memory Allocator(VMA)][4]
 * [AMD - GPUOpen Libraries & SDKs][13]
-* [GDC2018 - Getting Explicit: How Hard is Vulkan Really? (Porting DOOM3 to Vulkan)][17]
 * [GDC2019 - NVIDIA Nsight Graphics: Getting The Most From Your Vulkan Applications][19]
 
 
@@ -62,7 +61,22 @@
 * [CIS 565 GPU Programming and Architecture][12]
 * [CIS 565 Homework1 - Forward+ renderer in Vulkan using Compute Shader][14]
 * [CIS 565 Homework2 - Forward+ rendering using Vulkan][15]
+
+
+## vkDOOM3
+
 * [vkDOOM3][18]
+* [GDC2018 - Getting Explicit: How Hard is Vulkan Really? (Porting DOOM3 to Vulkan)][17]
+* I Am Graphics And So Can You
+  * [Part 1 - Intro][20]
+  * [Part 2 - Intuition][21]
+  * [Part 3 - The First 1,000][22]
+  * [Part 4 - Resources Rush The Stage][23]
+  * [An Aside - Motivation & Effort][24]
+  * [Part 4.5 - idTech][25]
+  * [Part 5 - Your Pixels Are Served][26]
+  * [Part 6 - Pipelines][27]
+  * [Part 7 - The Renderer Of Worlds][28]
 
 
 
@@ -85,3 +99,12 @@
 [17]:https://www.gdcvault.com/play/1024848/Getting-Explicit-How-Hard-is
 [18]:https://github.com/DustinHLand/vkDOOM3
 [19]:https://www.nvidia.com/en-us/on-demand/session/gtcsiliconvalley2019-s9661/
+[20]:https://www.fasterthan.life/blog/2017/7/11/i-am-graphics-and-so-can-you-part-1
+[21]:https://www.fasterthan.life/blog/2017/7/11/i-am-graphics-and-so-can-you-part-2-intuition
+[22]:https://www.fasterthan.life/blog/2017/7/12/i-am-graphics-and-so-can-you-part-3-breaking-ground
+[23]:https://www.fasterthan.life/blog/2017/7/13/i-am-graphics-and-so-can-you-part-4-
+[24]:https://www.fasterthan.life/blog/2017/7/15/i-am-graphics-and-so-can-you-effort
+[25]:https://www.fasterthan.life/blog/2017/7/16/i-am-graphics-and-so-can-you-idtech
+[26]:https://www.fasterthan.life/blog/2017/7/22/i-am-graphics-and-so-can-you-part-5-your-pixels-are-served
+[27]:https://www.fasterthan.life/blog/2017/7/24/i-am-graphics-and-so-can-you-part-6-pipelines
+[28]:https://www.fasterthan.life/blog/2017/7/28/i-am-graphics-and-so-can-you-part-7-the-renderer-of-worlds
