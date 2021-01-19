@@ -43,6 +43,11 @@
 * [Vulkan Tutorial][7]
 
 
+## Hardware Supports
+
+* https://vulkan.gpuinfo.org/
+
+
 ## Resources
 
 * [KHRONOS - Vulkan Homepage][8]
