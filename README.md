@@ -41,6 +41,8 @@
 * [RenderDoc - Brief Guide to Vulkan Layers][11]
 * [Intel - API without Secrets: Introduction to Vulkan][12]
 * [Vulkan Tutorial][7]
+* [Vulkan Guide][30]
+  * [GPU Driven Rendering][31]
 
 
 ## Hardware Supports
@@ -120,3 +122,5 @@ Niagara
 [27]:https://www.fasterthan.life/blog/2017/7/24/i-am-graphics-and-so-can-you-part-6-pipelines
 [28]:https://www.fasterthan.life/blog/2017/7/28/i-am-graphics-and-so-can-you-part-7-the-renderer-of-worlds
 [29]:https://github.com/zeux/niagara
+[30]:https://vkguide.dev/
+[31]:https://vkguide.dev/docs/gpudriven
