@@ -63,6 +63,20 @@
 * [GDC2019 - NVIDIA Nsight Graphics: Getting The Most From Your Vulkan Applications][19]
 
 
+## Khronos Group
+
+* [Moving to Vulkan : How to make your 3D graphics more explicit][32]
+  * Vulkan 101
+  * Command buffers
+  * SPIR-V and GLSL, SPIR-V Cross Tool
+  * Vertex Fetch and resource descriptors
+  * Render passes
+  * Synchronisation
+  * Swapchains
+  * Simultaneous Graphics & Compute
+  * Porting apps to Vulkan
+
+
 ## Github
 
 CIS 565
@@ -124,3 +138,4 @@ Niagara
 [29]:https://github.com/zeux/niagara
 [30]:https://vkguide.dev/
 [31]:https://vkguide.dev/docs/gpudriven
+[32]:https://www.khronos.org/events/moving-to-vulkan-how-to-make-your-3d-graphics-more-explicit
