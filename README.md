@@ -5,10 +5,12 @@
 * An sandbox of [Vulkan API][1]
 
 
+
 ## Build
 
 * open Code/Solutions/VS2017/ApiIntroVulkan.sln
 * build & play~
+
 
 
 ## Platforms
@@ -16,6 +18,7 @@
 * Win7, Win10
 * Linux
 * Android
+
 
 
 ## Solution Layout
@@ -35,6 +38,7 @@
 ```
 
 
+
 ## Tutorial
 
 * [RenderDoc - Vulkan in 30 Minutes][10]
@@ -45,9 +49,11 @@
   * [GPU Driven Rendering][31]
 
 
+
 ## Hardware Supports
 
 * https://vulkan.gpuinfo.org/
+
 
 
 ## Resources
@@ -61,6 +67,7 @@
 * [AMD - Vulkan Memory Allocator(VMA)][4]
 * [AMD - GPUOpen Libraries & SDKs][13]
 * [GDC2019 - NVIDIA Nsight Graphics: Getting The Most From Your Vulkan Applications][19]
+
 
 
 ## Khronos Group
@@ -77,11 +84,6 @@
   * Porting apps to Vulkan
 
 
-## Blog
-
-* [Render Graphs and Vulkan - A Deep Dive][33]
-* [Writing an efficient Vulkan renderer][34]
-
 
 ## Github
 
@@ -94,6 +96,13 @@ CIS 565
 Niagara
 
 * [Niagara - a Vulkan renderer that is written on stream from scratch][29]
+  * [Writing an efficient Vulkan renderer][34]
+
+Granite
+
+* [Granite - a Vulkan renderers with render graph supports][35]
+  * [Render Graphs and Vulkan - A Deep Dive][33]
+
 
 
 ## vkDOOM3
@@ -147,3 +156,4 @@ Niagara
 [32]:https://www.khronos.org/events/moving-to-vulkan-how-to-make-your-3d-graphics-more-explicit
 [33]:http://themaister.net/blog/2017/08/15/render-graphs-and-vulkan-a-deep-dive/
 [34]:https://zeux.io/2020/02/27/writing-an-efficient-vulkan-renderer/
+[35]:https://github.com/Themaister/Granite
