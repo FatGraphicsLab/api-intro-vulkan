@@ -77,6 +77,12 @@
   * Porting apps to Vulkan
 
 
+## Blog
+
+* [Render Graphs and Vulkan - A Deep Dive][33]
+* [Writing an efficient Vulkan renderer][34]
+
+
 ## Github
 
 CIS 565
@@ -139,3 +145,5 @@ Niagara
 [30]:https://vkguide.dev/
 [31]:https://vkguide.dev/docs/gpudriven
 [32]:https://www.khronos.org/events/moving-to-vulkan-how-to-make-your-3d-graphics-more-explicit
+[33]:http://themaister.net/blog/2017/08/15/render-graphs-and-vulkan-a-deep-dive/
+[34]:https://zeux.io/2020/02/27/writing-an-efficient-vulkan-renderer/
