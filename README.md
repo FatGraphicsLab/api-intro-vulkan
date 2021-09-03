@@ -82,7 +82,11 @@
   * Swapchains
   * Simultaneous Graphics & Compute
   * Porting apps to Vulkan
-
+* [Lei.Chat()][36]
+  * [HLSL for Vulkan: Matrices][37]
+  * [HLSL for Vulkan: Resources][38]
+  * [HLSL for Vulkan: Semantic Strings and Location Numbers][39]
+  * [Shader Toolchain: HLSL in Vulkan][40]
 
 
 ## Github
@@ -157,3 +161,8 @@ Granite
 [33]:http://themaister.net/blog/2017/08/15/render-graphs-and-vulkan-a-deep-dive/
 [34]:https://zeux.io/2020/02/27/writing-an-efficient-vulkan-renderer/
 [35]:https://github.com/Themaister/Granite
+[36]:https://www.lei.chat/
+[37]:https://www.lei.chat/posts/hlsl-for-vulkan-matrices/
+[38]:https://www.lei.chat/posts/hlsl-for-vulkan-resources/
+[39]:https://www.lei.chat/posts/hlsl-for-vulkan-semantic-strings-and-location-numbers/
+[40]:https://www.lei.chat/posts/shader-toolchain-hlsl-in-vulkan/
